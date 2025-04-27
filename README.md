@@ -23,7 +23,7 @@ A Python scanner that identifies open ports and correlates them with known malic
   - Checks the **abuse confidence score** and reports details like:
     - Country
     - Domain name (if available)
-    - Whether IP is public
+    - Whether IP is public (185.220.101.1)
     - Total number of reports
   - Helps judge if the scanned IP is suspicious
 
