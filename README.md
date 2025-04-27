@@ -34,6 +34,7 @@ A Python scanner that identifies open ports and correlates them with known malic
 - **🌐 External Blacklist Check**
   - Fetches FireHOL IP blacklist
   - Checks if target IP is blacklisted in threat databases
+  - Used as a static additional check — "is this IP in a known bad list?"
 
 - **🌟 Web Interface**
   - `app.py` builds a **web-based GUI** to scan IPs and view reports visually
