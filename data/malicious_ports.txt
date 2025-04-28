@@ -1,0 +1,5 @@
+23   # Telnet
+2323 # Alternate Telnet
+445  # SMB
+3389 # RDP
+6667 # IRC (used by botnets)

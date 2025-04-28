@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Scan Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-white">
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">📄 Scan Report for {{ target_ip }}</h1>
+
+    <div class="mb-5">
+        <h3>Open Ports:</h3>
+        {% if open_ports %}
+            <ul class="list-group">
+                {% for port in open_ports %}
+                    <li class="list-group-item bg-dark text-white">
+                        <strong>Port {{ port['port'] }}:</strong> {{ port['banner'] }}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No open ports detected.</p>
+        {% endif %}
+    </div>
+
+    <div class="mb-5">
+        <h3>⚠️ Malicious Ports:</h3>
+        {% if flagged_ports %}
+            <ul class="list-group">
+                {% for port in flagged_ports %}
+                    <li class="list-group-item bg-danger text-white">
+                        Suspicious Port: {{ port }}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No suspicious ports found.</p>
+        {% endif %}
+    </div>
+
+    <div class="mb-5">
+        <h3>🛡️ FireHOL Blacklist Check:</h3>
+        {% if is_ip_blacklisted %}
+            <div class="alert alert-danger">IP {{ target_ip }} is blacklisted!</div>
+        {% else %}
+            <div class="alert alert-success">IP {{ target_ip }} is clean.</div>
+        {% endif %}
+    </div>
+
+    <div class="mb-5">
+        <h3>🌐 AbuseIPDB Report:</h3>
+        {% if abuse_info %}
+            <ul class="list-group">
+                <li class="list-group-item bg-dark text-white">Abuse Score: {{ abuse_info['abuseConfidenceScore'] }}</li>
+                <li class="list-group-item bg-dark text-white">Country: {{ abuse_info['countryCode'] }}</li>
+                <li class="list-group-item bg-dark text-white">Domain: {{ abuse_info['domain'] }}</li>
+                <li class="list-group-item bg-dark text-white">Is Public IP: {{ abuse_info['isPublic'] }}</li>
+                <li class="list-group-item bg-dark text-white">Total Reports: {{ abuse_info['totalReports'] }}</li>
+            </ul>
+        {% else %}
+            <p>Could not fetch AbuseIPDB info.</p>
+        {% endif %}
+    </div>
+
+    <div class="text-center">
+        <a href="/" class="btn btn-primary">🔁 New Scan</a>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+    "target_ip": "185.220.101.4",
+    "open_ports": [
+        {
+            "port": 53,
+            "banner": "Error reading banner: [Errno 50] Network is down"
+        },
+        {
+            "port": 80,
+            "banner": "HTTP/1.1 200 OK\r\nServer: nginx\r\nDate: Mon, 28 Apr 2025 01:47:50 GMT\r\nContent-Type: text/html\r\nContent-Length: 2296\r\nLast-Modified: Mon, 29 Aug 2022 14:31:46 GMT\r\nConnection: keep-alive\r\nETag: \"630ccdd2-8f8\"\r\nAccept-Ranges: bytes\r\n\r\n<!DOCTYPE html>\n<html>\n\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width,minimum-scale=1\">\n<title>This is a Tor Exit Node</title>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n</head>\n\n<body>\n<h1>This is a Tor Exit Node</h1>\n\n<p>\nThis server is operated by <a href=\"https://artikel10.org/\" target=\"_blank\" rel=\"noopener\">Artikel10 e.V.</a> as part of the <a href=\"https://www.torproject.org/\" target=\"_blank\" rel=\"noopener\">Tor network</a>, which is dedicated to <a href=\"https://2019.www.torproject.org/about/overview\" target=\"_blank\" rel=\"noopener\">keeping Internet users safe</a>.\n</p>\n\n<p>\nWhile Tor is not designed for malicious computer users, it is true that they can use the network for malicious ends. In reality however, the actual amount o"
+        },
+        {
+            "port": 443,
+            "banner": "Error reading banner: timed out"
+        }
+    ],
+    "flagged_ports": [],
+    "is_ip_blacklisted": false,
+    "abuse_info": {
+        "abuseConfidenceScore": 100,
+        "countryCode": "DE",
+        "domain": "artikel10.org",
+        "isPublic": true,
+        "totalReports": 185
+    }
+}
