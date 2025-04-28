@@ -2,6 +2,12 @@
 
 A Python scanner that identifies open ports and correlates them with known malicious services.
 
+<img width="1000" alt="Screenshot 2025-04-28 at 5 02 15 PM" src="https://github.com/user-attachments/assets/8d9950cb-dfa3-4a71-ac34-8a01f2dee14a" />
+
+
+<img width="1000" alt="Screenshot 2025-04-28 at 5 03 24 PM" src="https://github.com/user-attachments/assets/e5ee67df-1280-42e7-942e-f7411b1a0517" />
+
+
 # Features
 
 - **🔎 Fast Port Scanning**
