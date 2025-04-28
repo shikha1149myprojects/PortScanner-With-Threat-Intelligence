@@ -43,3 +43,27 @@ A Python scanner that identifies open ports and correlates them with known malic
 
 
 # Installation
+
+```
+# Clone Repository
+git clone https://github.com/shikha1149myprojects/PortScanner-With-Threat-Intelligence.git
+
+# Move into directory
+cd webapp
+
+# Set Up virtual environment
+python3 -m venv venv
+
+# Activate venv For Linux/Max
+source venv/bin/activate
+
+# Activate venv For Windows
+venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run app
+python3 app.py
+
+```
