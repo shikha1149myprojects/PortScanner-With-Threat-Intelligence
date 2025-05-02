@@ -1,4 +1,4 @@
-# PortHunter+: Scan, Flag, and Threat-Tag
+# ThreatMapX — Scan, Flag, and Threat-Tag
 
 A Python scanner that identifies open ports and correlates them with known malicious services.
 
